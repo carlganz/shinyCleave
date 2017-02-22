@@ -1,12 +1,15 @@
+# Copyright CannaData Solutions 2017
+
 #' Include Cleave Scripts
 #' 
 #' Adds Cleave Javascript files to Shiny App
 #' 
+#' @param country Two-digit lower-case country code indicating source of phone number
 #' @export
 #' @importFrom shiny singleton includeScript tagList
 #' 
 
-includeCleave <- function() {
+includeCleave <- function(country = "us") {
   shiny::singleton(
     shiny::tagList(
       shiny::includeScript(
@@ -15,7 +18,8 @@ includeCleave <- function() {
       ),
       shiny::includeScript(
         system.file(package = "shinyCleave",
-                    "javascript", "cleave", "addons", "cleave-phone.us.js")
+                    "javascript", "cleave", "addons", 
+                    paste0("cleave-phone.", country, ".js"))
       )
     )
   )
