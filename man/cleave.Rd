@@ -4,7 +4,7 @@
 \alias{cleave}
 \title{Server side functionality}
 \usage{
-cleave(session, selector, inputType)
+cleave(session, selector, inputOptions)
 }
 \arguments{
 \item{session}{The \code{session} object passed to function given to \code{shinyServer}}
