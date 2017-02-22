@@ -56,12 +56,11 @@ creditCardInput <- function(inputId, label, value = "", width = NULL, placeholde
 #' 
 #' @param session The `session` object passed to function given to `shinyServer`
 #' @param selector CSS Selector specifying the input/s
-#' @param inputType List of options passed to Cleave as JSON; see notes
+#' @param inputOptions List of options passed to Cleave as JSON; see notes
 #' @export
 #' @note See \url{http://nosir.github.io/cleave.js/} for options
 #' @note Javascript functions passed to inputType should be wrapped in `I()`
 #' @importFrom jsonlite toJSON
-#' @import shiny
 #' 
 
 cleave <- function(session, selector, inputOptions) {

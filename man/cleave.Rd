@@ -11,7 +11,7 @@ cleave(session, selector, inputOptions)
 
 \item{selector}{CSS Selector specifying the input/s}
 
-\item{inputType}{List of options passed to Cleave as JSON; see notes}
+\item{inputOptions}{List of options passed to Cleave as JSON; see notes}
 }
 \description{
 Cleave inputs from the server
