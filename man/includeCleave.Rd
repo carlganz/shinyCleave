@@ -4,7 +4,10 @@
 \alias{includeCleave}
 \title{Include Cleave Scripts}
 \usage{
-includeCleave()
+includeCleave(country = "us")
+}
+\arguments{
+\item{country}{Two-digit lower-case country code indicating source of phone number}
 }
 \description{
 Adds Cleave Javascript files to Shiny App
