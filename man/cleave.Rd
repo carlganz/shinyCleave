@@ -4,14 +4,14 @@
 \alias{cleave}
 \title{Server side functionality}
 \usage{
-cleave(session, selector, inputType)
+cleave(session, selector, inputOptions)
 }
 \arguments{
 \item{session}{The \code{session} object passed to function given to \code{shinyServer}}
 
 \item{selector}{CSS Selector specifying the input/s}
 
-\item{inputType}{List of options passed to Cleave as JSON; see notes}
+\item{inputOptions}{List of options passed to Cleave as JSON; see notes}
 }
 \description{
 Cleave inputs from the server

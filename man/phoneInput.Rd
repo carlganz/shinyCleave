@@ -3,6 +3,7 @@
 \name{phoneInput}
 \alias{phoneInput}
 \alias{zipInput}
+\alias{creditCardInput}
 \title{Phone Input}
 \usage{
 phoneInput(inputId, label, value = "", width = NULL, placeholder = NULL,
@@ -10,6 +11,9 @@ phoneInput(inputId, label, value = "", width = NULL, placeholder = NULL,
 
 zipInput(inputId, label, value = "", width = NULL, placeholder = NULL,
   ...)
+
+creditCardInput(inputId, label, value = "", width = NULL,
+  placeholder = NULL)
 }
 \arguments{
 \item{inputId}{The \code{input} slot that will be used to access the value.}

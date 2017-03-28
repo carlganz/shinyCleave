@@ -20,6 +20,11 @@ includeCleave <- function(country = "us") {
         system.file(package = "shinyCleave",
                     "javascript", "cleave", "addons", 
                     paste0("cleave-phone.", country, ".js"))
+      ),
+      shiny::includeScript(
+        system.file(package = "shinyCleave",
+                    "javascript", 
+                    "shinyCleave.js")
       )
     )
   )
