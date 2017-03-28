@@ -2,7 +2,9 @@
 
 export(cleave)
 export(includeCleave)
+export(myInput)
 export(phoneInput)
+export(zipInput)
 import(shiny)
 importFrom(jsonlite,toJSON)
 importFrom(shiny,includeScript)

@@ -12,6 +12,6 @@ License: Apache License 2.0 + LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Import: shiny
+Import: shiny, jsonlite
 URL: https://github.com/carlganz/shinyCleave
 BugReports: https://github.com/carlganz/shinyCleave/issues
