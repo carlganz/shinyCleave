@@ -2,9 +2,15 @@
 % Please edit documentation in R/includeCleave.R
 \name{includeCleave}
 \alias{includeCleave}
+\alias{cleaveLib}
+\alias{shinyCleaveLib}
 \title{Include Cleave Scripts}
 \usage{
 includeCleave(country = "us")
+
+cleaveLib(country = "us")
+
+shinyCleaveLib()
 }
 \arguments{
 \item{country}{Two-digit lower-case country code indicating source of phone number}

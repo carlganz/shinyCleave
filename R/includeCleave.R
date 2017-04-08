@@ -29,3 +29,30 @@ includeCleave <- function(country = "us") {
     )
   )
 }
+
+#' @rdname includeCleave
+#' @export
+#' @importFrom htmltools htmlDependency
+#'
+
+cleaveLib <- function(country = "us") {
+  htmltools::htmlDependency(
+    "cleave", "0.7.10", system.file(package = "shinyCleave",
+                                    "javascript", "cleave"),
+    script = c("cleave.min.js", paste0("addons/cleave-phone.", country, ".js")),
+    all_files = FALSE
+  )
+}
+
+#' @rdname includeCleave
+#' @export
+#' 
+
+shinyCleaveLib <- function() {
+  htmltools::htmlDependency(
+    "shinyCleave", "0.0.1", system.file(package = "shinyCleave",
+                                    "javascript"),
+    script = "shinyCleave.js",
+    all_files = FALSE
+  )
+}
