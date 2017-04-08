@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Build Status](https://travis-ci.org/carlganz/shinyCleave.svg?branch=master)](https://travis-ci.org/carlganz/shinyCleave)
+[![Build Status](https://travis-ci.org/CannaData/shinyCleave.svg?branch=master)](https://travis-ci.org/CannaData/shinyCleave)
 
 [Shiny](https://github.com/rstudio/shiny) provides many basic inputs that map nicely to R's basic datatypes. However, there many instances where users may want a custom `textInput` that may or may not map consistent with a specific R datatype. For example, phone numbers, credit cards, and other formatted strings.
 
