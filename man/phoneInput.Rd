@@ -30,6 +30,8 @@ be entered into the control. Internet Explorer 8 and 9 do not support this
 option.}
 
 \item{country}{Two-digit lower-case country code indicating source of phone number}
+
+\item{...}{Additional parameters passed to \code{myInput}}
 }
 \description{
 Input for phone numbers

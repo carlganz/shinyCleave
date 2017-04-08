@@ -23,6 +23,8 @@ see \code{\link{validateCssUnit}}.}
 be entered into the control. Internet Explorer 8 and 9 do not support this
 option.}
 
+\item{class}{CSS class}
+
 \item{...}{Additional attributes passed to Shiny input}
 }
 \description{

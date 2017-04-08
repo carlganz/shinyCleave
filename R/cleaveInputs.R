@@ -7,6 +7,7 @@
 #' @inheritParams shiny::textInput
 #' @inheritParams includeCleave
 #' @importFrom shiny textInput
+#' @param ... Additional parameters passed to \code{myInput}
 #' @export
 #'
 
@@ -93,7 +94,10 @@ cleave <- function(session, selector, inputOptions) {
 #' 
 #' @inheritParams shiny::textInput
 #' @param type Type of Shiny input
+#' @param class CSS class
 #' @param ... Additional attributes passed to Shiny input
+#' @importFrom shiny restoreInput
+#' @importFrom htmltools div validateCssUnit tags
 #' @export
 #' 
 myInput <- function(type, inputId, label, value = "", width = NULL, placeholder = NULL, class = "", ...) 
