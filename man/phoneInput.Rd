@@ -3,6 +3,7 @@
 \name{phoneInput}
 \alias{phoneInput}
 \alias{zipInput}
+\alias{moneyInput}
 \alias{creditCardInput}
 \title{Phone Input}
 \usage{
@@ -10,6 +11,9 @@ phoneInput(inputId, label, value = "", width = NULL, placeholder = NULL,
   country = "us", ...)
 
 zipInput(inputId, label, value = "", width = NULL, placeholder = NULL,
+  ...)
+
+moneyInput(inputId, label, value = "", width = NULL, placeholder = NULL,
   ...)
 
 creditCardInput(inputId, label, value = "", width = NULL,

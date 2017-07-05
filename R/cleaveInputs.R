@@ -36,6 +36,21 @@ zipInput <- function(inputId, label, value = "", width = NULL, placeholder = NUL
   
 }
 
+#' @export
+#' @rdname phoneInput
+moneyInput <- function(inputId, label, value = "", width = NULL, placeholder = NULL, ...) {
+  shiny::tagList(
+    shinyCleave::myInput("text", inputId, label, value, width, placeholder, ...),
+    shiny::tags$script(
+      paste0('
+      var cleave = new Cleave("#', inputId, '", {
+        prefix: "$"
+      });
+    ')
+    )
+  )
+}
+
 #' @rdname phoneInput
 #' @export
 #'
